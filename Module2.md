@@ -19,6 +19,7 @@
 3. Python leaves the code for a moment, to jump to the function you want to invoke
 4. Executes its code, causes the desired effect
 5. Returns to your code and resumes Execution
+6. Calling a function is referred to as `function invocation` or `function call`
 
 ### `print()`
 * Sends the result to the output device (e.g. the console)
@@ -26,6 +27,14 @@
 * Does not return anything
 * With multiple arguments adds a space between them, all on one line
   * e.g. `print('a','b') # 'a b'`
+
+### Strings
+* can be single or double quotes, (escaping chars is possible in _each_)
+
+### Literals
+* "A literal is data whose values are determined by the literal itself" 
+* like `123` _is_ 123, `c` is not.
+* You use literals 'to encode data and put them into your code'
 
 ### Functional Arguments
 * Passing arguments with commas is called '*the positional way*'
@@ -35,6 +44,8 @@
     * the `end=` keyword *implicitly* uses `\n` (as default = implicitly)
   * You cannot use positional arguments after keyword arguments
     * e.g. `print('hi', end=" ", 'there') # SyntaxError`
+  * Keyword arguments can be used in any order
+  * 
 
 ### Notables
 > In Python you can use escaped chars ('\n') in single quoted strings, unlike PHP
