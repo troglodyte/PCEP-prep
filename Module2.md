@@ -36,6 +36,24 @@
 * like `123` _is_ 123, `c` is not.
 * You use literals 'to encode data and put them into your code'
 
+### Types
+* Refers to `int`, `string`, `float`, etc
+* The type of a literal determines how python will store it in memory
+* You can use underscores in numbers, e.g.: -100_000_000
+* Floats cannot be empty
+* Scientific notation uses 'eE', e.g.: 3e8
+  * exponent (after 'eE')
+  * base (before 'eE')
+
+```python
+"""
+Python always chooses the _more economical 
+form of the number's presentation_, and you 
+should take this into consideration when creating literals.
+"""
+print(0.000000000000000000001) # outputs: 1e-21
+```
+
 ### Functional Arguments
 * Passing arguments with commas is called '*the positional way*'
   * `print('a', 'b') # 'a b'`
