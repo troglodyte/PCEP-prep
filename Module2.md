@@ -64,13 +64,19 @@ print(0.000000000000000000001) # outputs: 1e-21
     * e.g. `print('hi', end=" ", 'there') # SyntaxError`
   * Keyword arguments can be used in any order
   * 
-### Operators
+### Arithmetic Operators
 * `+ - * / // % **`
 * `**` exponentiantion (to the power of)
  * `2**3` is 2 to the power of 3
  * when both args are ints, result is an int
  * when one arg is a float, result is a float  
-
+* `//` integer divisional 
+ * The result of integer division is always rounded to the nearest integer value that is less than the real (not rounded) result.
+ * rounding always goes to the lesser integer.
+ * `print(6. // 4) # 1.0`
+ * Integer division can also be called *floor division*
+* `%` Modulo, like php **remainder left after the integer division**
+* `-` Expects two args, left: *minuend* and right: *subtrahend*
   
 ### Notables
 > In Python you can use escaped chars ('\n') in single quoted strings, unlike PHP
