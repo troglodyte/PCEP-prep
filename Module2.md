@@ -1,4 +1,4 @@
-# Python Essentials 1: Module 2
+# Python Essentials 1: Module 2 - Basic, eg: Operators, Literals etc
 ### Functions
 - Cause some effect
 - evaluate a value
@@ -67,17 +67,32 @@ print(0.000000000000000000001) # outputs: 1e-21
 ### Arithmetic Operators
 * `+ - * / // % **`
 * `**` exponentiantion (to the power of)
- * `2**3` is 2 to the power of 3
- * when both args are ints, result is an int
- * when one arg is a float, result is a float  
+  * `2**3` is 2 to the power of 3
+  * when both args are ints, result is an int
+  * when one arg is a float, result is a float  
 * `//` integer divisional 
- * The result of integer division is always rounded to the nearest integer value that is less than the real (not rounded) result.
- * rounding always goes to the lesser integer.
- * `print(6. // 4) # 1.0`
- * Integer division can also be called *floor division*
+  * The result of integer division is always rounded to the nearest integer value that is less than the real (not rounded) result.
+  * rounding always goes to the lesser integer.
+  * `print(6. // 4) # 1.0`
+  * Integer division can also be called *floor division*
 * `%` Modulo, like php **remainder left after the integer division**
 * `-` Expects two args, left: *minuend* and right: *subtrahend*
-  
+* Will prioritize mathematical operations in order, The phenomenon that causes some operators to act before others is known as **the hierarchy of priorities**.  
+* The **binding** of the operator determines the order
+* *most* operators use left side binding
+  * `**` exponentiation operator uses right side binding
+* subexpressions, `(parenthesis)` are calculated first
+  * Parenthesis can improve readability
+* **Unary operator** is an operator with only one operand, eg `-1`, `+3`
+* **Binary operator** is an _operator_ with two, eg: `4+5` etc
+
+| Priority | Operator | |
+|---|:---|---:|
+| 1 | `**` | | 
+| 2 | `+`,`-` | unary| 
+|3|`*`,`/`,`//`,`%`
+|4|`+`,`-`|binary|
+
 ### Notables
 > In Python you can use escaped chars ('\n') in single quoted strings, unlike PHP
 
