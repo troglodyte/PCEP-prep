@@ -96,6 +96,20 @@ print(0.000000000000000000001) # outputs: 1e-21
 ### Notables
 > In Python you can use escaped chars ('\n') in single quoted strings, unlike PHP
 
+### Variables
+* A variable comes into existence as a result of assigning a value to it (no need to declare it)
+* use `=` to assign 
+* 'best practice' is to use snake_case
+* not allowed to use a variable which doesn't exist (throws error '... is not defined') 
+
+
+### Comments
+* Ommited at runtime
+* should give 'self-commenting' names
+  * don't use confusing var names
+
+
+
 ### Miscellaneous
 > Function names should be significant  
 
