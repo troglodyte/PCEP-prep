@@ -85,6 +85,9 @@ print(0.000000000000000000001) # outputs: 1e-21
   * Parenthesis can improve readability
 * **Unary operator** is an operator with only one operand, eg `-1`, `+3`
 * **Binary operator** is an _operator_ with two, eg: `4+5` etc
+* `+` concats strings
+* `*` replicates strings `3*'string' = stringstringstring`
+
 
 | Priority | Operator | |
 |---|:---|---:|
@@ -95,6 +98,7 @@ print(0.000000000000000000001) # outputs: 1e-21
 
 ### Notables
 > In Python you can use escaped chars ('\n') in single quoted strings, unlike PHP
+* `str()` turns int/float into a string
 
 ### Variables
 * A variable comes into existence as a result of assigning a value to it (no need to declare it)
@@ -107,6 +111,12 @@ print(0.000000000000000000001) # outputs: 1e-21
 * Ommited at runtime
 * should give 'self-commenting' names
   * don't use confusing var names
+
+### Input
+* a program that doesn't get users input is a **deaf program**
+* return value form `input()` is a string
+* you mustn't use it as an argument of any arithmetic operation
+  * use `int()` or `float()`
 
 
 
